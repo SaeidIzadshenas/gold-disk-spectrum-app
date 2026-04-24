@@ -59,13 +59,13 @@ t0_values = sorted(df["t0"].unique())
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    P_fixed = st.selectbox("Select P [nm]", P_values)
+    P_fixed = st.selectbox("Select P (Periodicity) [nm]", P_values)
 
 with col2:
-    r0_fixed = st.selectbox("Select r0 [nm]", r0_values)
+    r0_fixed = st.selectbox("Select r0 (Au radius) [nm]", r0_values)
 
 with col3:
-    t0_fixed = st.selectbox("Select t0 [nm]", t0_values)
+    t0_fixed = st.selectbox("Select t0 (Au thickness) [nm]", t0_values)
 
 st.subheader("Wavelength sweep")
 
