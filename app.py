@@ -73,14 +73,12 @@ col4, col5, col6 = st.columns(3)
 
 with col4:
     lambda_min = st.number_input(r"$\lambda_{\min}$ [nm]", value=300)
-    # st.markdown(r"$\lambda_{\min}$ [nm]")
-    # lambda_min = st.number_input(" ", value=300)
 
 with col5:
-    lambda_max = st.number_input("\lambda_{max} [nm]", value=1000)
+    lambda_max = st.number_input(r"$\lambda_{\max}$ [nm]", value=1000)
 
 with col6:
-    lambda_step = st.number_input("? step [nm]", value=1)
+    lambda_step = st.number_input("step [nm]", value=1)
 
 if st.button("Predict Spectrum"):
 
