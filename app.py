@@ -124,7 +124,7 @@ if st.button("Predict Spectrum"):
         ax.scatter(df_true["lda0"], df_true["T"], label="Dataset T", s=15, alpha=0.6)
         st.success(f"This geometry exists in the dataset. Rows found: {mask.sum()}")
     else:
-        st.warning("This geometry is not in the original dataset. Prediction is interpolation/extrapolation.")
+        st.warning("This geometry is not in the original dataset.")
 
     ax.set_xlabel("Wavelength [nm]")
     ax.set_ylabel("R / T")
