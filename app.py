@@ -72,9 +72,9 @@ st.subheader("Wavelength sweep")
 col4, col5, col6 = st.columns(3)
 
 with col4:
-    # lambda_min = st.number_input("\lambda_{min} [nm]", value=300)
-    st.markdown(r"$\lambda_{\min}$ [nm]")
-    lambda_min = st.number_input(" ", value=300)
+    lambda_min = st.number_input(r"$\lambda_{\min}$ [nm]", value=300)
+    # st.markdown(r"$\lambda_{\min}$ [nm]")
+    # lambda_min = st.number_input(" ", value=300)
 
 with col5:
     lambda_max = st.number_input("\lambda_{max} [nm]", value=1000)
